@@ -62,6 +62,7 @@ public class UserController {
 			throw new UserNotFoundException(id);
 		}
 		userrepo.deleteById(id);
+		
 		return "user with id "+id+" is deleted sucessfully";
 		
 	}
